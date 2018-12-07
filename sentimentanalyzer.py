@@ -2,10 +2,11 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 print("*"*50)
-#
-text="the touch is not bad. the product is not a bad. i love this mobile fisrt. the product is awesome. it is easy to use. cost is too high to buy. camera is not good. comparing with other the quality is very bad. bad mobile. not good to say."
+
+#textt="the touch is not bad. the product is not a bad. i love this mobile fisrt. the product is awesome. it is easy to use. cost is too high to buy. camera is not good. comparing with other the quality is very bad. bad mobile. not good to say."
 print("*"*50)
-text=input("Enter the review here: ")
+textt=input("Enter the review here: ")
+text=[x.lower() for x in textt]
 print("*"*50)
 positive=['good','happy','love','awesome']
 negative=['sad','bad','not','sad','no','wont']
